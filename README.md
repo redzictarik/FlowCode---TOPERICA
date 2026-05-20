@@ -1,8 +1,4 @@
-[README.md](https://github.com/user-attachments/files/28057987/README.md)
-# FlowCode--ŠTOPERICA
-
-Digitalna štoperica s funkcijama pokretanja, pauziranja i resetiranja. Prikazuje proteklo vrijeme u formatu sati:minute:sekunde:milisekunde s preciznošću do 10ms. Idealna za mjerenje vremenskih intervala u sportu, laboratoriju ili svakodnevnoj upotrebi. Izrađena u Flowcode okruženju.
-
+[README (2).md](https://github.com/user-attachments/files/28058610/README.2.md)
 # ⏱️ Digitalna Štoperica — PIC16F88 & Flowcode
 
 > Laboratorijska vježba iz predmeta **Praktična nastava**  
@@ -64,10 +60,54 @@ INICIJALIZACIJA
 
 ---
 
+## 📸 Screenshotovi projekta
+
+### 🗂️ Globalne varijable (Project Explorer)
+![Project Explorer - Varijable](slike/project_explorer.png)
+> Prikaz svih globalnih varijabli korištenih u projektu. Definirane su varijable za upravljanje stanjem štoperice: `start`, `stop`, `reset`, `loop`, te zasebne varijable za `minute`, `sekunde` i `stotinke` — svaka u duplikatu (`minute1`, `sekunde1`, `stotinke1`) radi implementacije **Lap funkcije**. Varijable `x` i `y` koriste se kao pomoćne u logici prikaza.
+
+---
+
+### 🔀 Flowcode dijagram toka (glavni program)
+![Flowcode dijagram toka](slike/flowcode_dijagram.png)
+> Kompletan grafički program izrađen u Flowcode okruženju. Jasno su vidljive sve programske strukture: inicijalizacija sistema, glavna petlja s uvjetnim grananjima za detekciju tastera, Timer Interrupt rutina za precizno mjerenje te algoritam formatiranja i ispisa vrijednosti na LCD ekran.
+
+---
+
+### ▶️ Simulacija — štoperica u radu
+![Simulacija - štoperica u radu](slike/simulacija_rad.png)
+> Prikaz simulacije dok je štoperica aktivna. LCD ekran prikazuje izmjereno vrijeme u formatu `M : SS : ds` (minuta : sekunde : desetinke). Na screenshotu se vidi vrijednost `0 : 1 : 35`, što potvrđuje ispravan rad tajmera i tačnost mjerenja.
+
+---
+
+### 🔄 Simulacija — početno stanje (reset)
+![Simulacija - početno stanje](slike/simulacija_reset.png)
+> Početno stanje štoperice nakon pokretanja ili resetovanja. Ekran prikazuje `00 : 00 : 00`, što potvrđuje da su sve varijable pravilno inicijalizirane na nulu i da je sistem spreman za novo mjerenje.
+
+---
+
+### 🏁 Simulacija — Lap funkcija (prolazna vremena)
+![Simulacija - Lap vremena](slike/simulacija_lap.png)
+> Demonstracija **Lap funkcije** — na LCD-u su prikazana četiri uzastopna prolazna vremena:
+> - `0 : 3 : 42`
+> - `0 : 0 : 79`
+> - `0 : 1 : 32`
+> - `0 : 1 : 93`
+>
+> Dok je prikaz zamrznut za svako prolazno vrijeme, tajmer u pozadini nastavlja neometano raditi, što je ključna karakteristika profesionalnih štoperica.
+
+---
+
 ## 📁 Struktura repozitorija
 
 ```
 📦 stoperica-flowcode
+ ┣ 📁 slike/
+ ┃  ┣ 🖼️ project_explorer.png     ← Globalne varijable
+ ┃  ┣ 🖼️ flowcode_dijagram.png    ← Dijagram toka programa
+ ┃  ┣ 🖼️ simulacija_rad.png       ← Štoperica u radu
+ ┃  ┣ 🖼️ simulacija_reset.png     ← Početno stanje
+ ┃  └ 🖼️ simulacija_lap.png       ← Lap funkcija
  ┣ 📄 stop start.fcf                                         ← Flowcode projekat
  ┣ 📄 Izvjestaj - Tarik Redzic, Ahmed Mrakanovic, Dino Poljic.docx  ← Tehnički izvještaj
  ┗ 📄 README.md                                              ← Ovaj fajl
@@ -150,4 +190,3 @@ Ovaj projekat je izrađen u edukacijske svrhe u okviru nastavnog programa.
 <p align="center">
   <i>Izrađeno u Flowcode okruženju · PIC16F88 · Tuzla, 2026.</i>
 </p>
-
