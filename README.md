@@ -63,31 +63,31 @@ INICIJALIZACIJA
 ## 📸 Screenshotovi projekta
 
 ### 🗂️ Globalne varijable (Project Explorer)
-![Project Explorer - Varijable](preview (1).webp)
+![Project Explorer - Varijable](preview.webp)
 > Prikaz svih globalnih varijabli korištenih u projektu. Definirane su varijable za upravljanje stanjem štoperice: `start`, `stop`, `reset`, `loop`, te zasebne varijable za `minute`, `sekunde` i `stotinke` — svaka u duplikatu (`minute1`, `sekunde1`, `stotinke1`) radi implementacije **Lap funkcije**. Varijable `x` i `y` koriste se kao pomoćne u logici prikaza.
 
 ---
 
 ### 🔀 Flowcode dijagram toka (glavni program)
-![Flowcode dijagram toka](slike/flowcode_dijagram.png)
+![Flowcode dijagram toka](preview(1).webp)
 > Kompletan grafički program izrađen u Flowcode okruženju. Jasno su vidljive sve programske strukture: inicijalizacija sistema, glavna petlja s uvjetnim grananjima za detekciju tastera, Timer Interrupt rutina za precizno mjerenje te algoritam formatiranja i ispisa vrijednosti na LCD ekran.
 
 ---
 
 ### ▶️ Simulacija — štoperica u radu
-![Simulacija - štoperica u radu](slike/simulacija_rad.png)
+![Simulacija - štoperica u radu](preview(2).webp)
 > Prikaz simulacije dok je štoperica aktivna. LCD ekran prikazuje izmjereno vrijeme u formatu `M : SS : ds` (minuta : sekunde : desetinke). Na screenshotu se vidi vrijednost `0 : 1 : 35`, što potvrđuje ispravan rad tajmera i tačnost mjerenja.
 
 ---
 
 ### 🔄 Simulacija — početno stanje (reset)
-![Simulacija - početno stanje](slike/simulacija_reset.png)
+![Simulacija - početno stanje](preview(3).webp)
 > Početno stanje štoperice nakon pokretanja ili resetovanja. Ekran prikazuje `00 : 00 : 00`, što potvrđuje da su sve varijable pravilno inicijalizirane na nulu i da je sistem spreman za novo mjerenje.
 
 ---
 
 ### 🏁 Simulacija — Lap funkcija (prolazna vremena)
-![Simulacija - Lap vremena](slike/simulacija_lap.png)
+![Simulacija - Lap vremena](preview(4).webp)
 > Demonstracija **Lap funkcije** — na LCD-u su prikazana četiri uzastopna prolazna vremena:
 > - `0 : 3 : 42`
 > - `0 : 0 : 79`
