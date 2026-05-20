@@ -63,7 +63,7 @@ INICIJALIZACIJA
 ## 📸 Screenshotovi projekta
 
 ### 🗂️ Globalne varijable (Project Explorer)
-![Project Explorer - Varijable](slike/project_explorer.png)
+![Project Explorer - Varijable](preview (1).webp)
 > Prikaz svih globalnih varijabli korištenih u projektu. Definirane su varijable za upravljanje stanjem štoperice: `start`, `stop`, `reset`, `loop`, te zasebne varijable za `minute`, `sekunde` i `stotinke` — svaka u duplikatu (`minute1`, `sekunde1`, `stotinke1`) radi implementacije **Lap funkcije**. Varijable `x` i `y` koriste se kao pomoćne u logici prikaza.
 
 ---
