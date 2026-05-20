@@ -69,25 +69,25 @@ INICIJALIZACIJA
 ---
 
 ### 🔀 Flowcode dijagram toka (glavni program)
-![Flowcode dijagram toka](preview(1).webp)
+![Flowcode dijagram toka](prva).webp)
 > Kompletan grafički program izrađen u Flowcode okruženju. Jasno su vidljive sve programske strukture: inicijalizacija sistema, glavna petlja s uvjetnim grananjima za detekciju tastera, Timer Interrupt rutina za precizno mjerenje te algoritam formatiranja i ispisa vrijednosti na LCD ekran.
 
 ---
 
 ### ▶️ Simulacija — štoperica u radu
-![Simulacija - štoperica u radu](preview(2).webp)
+![Simulacija - štoperica u radu](druga.webp)
 > Prikaz simulacije dok je štoperica aktivna. LCD ekran prikazuje izmjereno vrijeme u formatu `M : SS : ds` (minuta : sekunde : desetinke). Na screenshotu se vidi vrijednost `0 : 1 : 35`, što potvrđuje ispravan rad tajmera i tačnost mjerenja.
 
 ---
 
 ### 🔄 Simulacija — početno stanje (reset)
-![Simulacija - početno stanje](preview(3).webp)
+![Simulacija - početno stanje](treca.webp)
 > Početno stanje štoperice nakon pokretanja ili resetovanja. Ekran prikazuje `00 : 00 : 00`, što potvrđuje da su sve varijable pravilno inicijalizirane na nulu i da je sistem spreman za novo mjerenje.
 
 ---
 
 ### 🏁 Simulacija — Lap funkcija (prolazna vremena)
-![Simulacija - Lap vremena](preview(4).webp)
+![Simulacija - Lap vremena](cetvrta.webp)
 > Demonstracija **Lap funkcije** — na LCD-u su prikazana četiri uzastopna prolazna vremena:
 > - `0 : 3 : 42`
 > - `0 : 0 : 79`
