@@ -69,7 +69,7 @@ INICIJALIZACIJA
 ---
 
 ### 🔀 Flowcode dijagram toka (glavni program)
-![Flowcode dijagram toka](prva).webp)
+![Flowcode dijagram toka](prva.webp)
 > Kompletan grafički program izrađen u Flowcode okruženju. Jasno su vidljive sve programske strukture: inicijalizacija sistema, glavna petlja s uvjetnim grananjima za detekciju tastera, Timer Interrupt rutina za precizno mjerenje te algoritam formatiranja i ispisa vrijednosti na LCD ekran.
 
 ---
